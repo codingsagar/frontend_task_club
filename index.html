@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter&family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio Website</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: #333333;
+      }
+
+      ul {
+        background-color: magenta;
+        height: 10vh;
+        justify-content: space-around;
+        display: flex;
+      }
+      ul li {
+        list-style: none;
+        line-height: 10vh;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      ul li:hover {
+        color: #333333;
+      }
+
+      .vasudev {
+        font-size: 35px;
+        margin-right: 550px;
+        margin-left: 70px;
+        font-weight: bold;
+      }
+
+      h2 {
+        color: rgb(121, 113, 113);
+        font-size: 30px;
+
+        animation: kuchbhi 0.7s infinite linear;
+      }
+
+      @keyframes kuchbhi {
+        0% {
+          color: rgb(154, 146, 146);
+        }
+        55% {
+          color: rgb(207, 131, 207);
+        }
+      }
+
+      .main {
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        height: 90vh;
+      }
+
+      h1 {
+        font-size: 45px;
+        color: magenta;
+      }
+
+      img {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      ul a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .person {
+        display: flex;
+      }
+
+      .perimg {
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        border: 1px solid black;
+      }
+
+      .ctr {
+        text-align: center;
+      }
+
+      .skills {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        height: 500px;
+      }
+
+      .html {
+        margin: 50px 0;
+      }
+
+      progress {
+        width: 340px;
+        font-size: 45px;
+      }
+
+      .project {
+        background-color: rgb(40, 40, 109);
+        height: 50px;
+        width: 600px;
+        color: white;
+        margin: 20px 0;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 40px;
+        transition: all 0.6s;
+      }
+
+
+      .project:hover {
+        transform: scale(1.1);
+        background-color: magenta;
+        width: 70vw;
+        cursor: pointer;
+      }
+
+      .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project a {
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+      }
+
+      footer {
+        background-color: magenta;
+        color: whitesmoke;
+        height: 15vh;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        letter-spacing: .50px;
+
+      }
+
+      .laptop{
+          display: none;
+          text-align: center;
+          margin-top: 300px;
+      }
+
+      @media (max-width:950px) {
+          .full{
+              display: none;
+          }
+
+          .laptop{
+              display: block;
+          }
+
+          
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h3 style="color: #333333;" class="laptop">Please visit Website on laptop.</h3>
+    <div class="full">
+        <ul>
+            <li>Home</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+      
+          <div class="main">
+            <div class="info">
+              <h2>Hello World 👋</h2>
+              <h1>I'm Sagar Bhat</h1>
+              <p style="color: #333333">
+                Front-end Developer learning backend development
+              </p>
+            </div>
+            <div class="img1div">
+              <img src="./person.jpg" alt="" class="perimg" />
+            </div>
+          </div>
+      
+          <h1 class="ctr">- Skills -</h1>
+          <div class="skills">
+            <div class="one">
+              <div class="html">
+                <p>HTML</p>
+                <progress max="100" value="80"></progress>
+              </div>
+      
+              <div class="html">
+                <p>CSS</p>
+                <progress max="100" value="90"></progress>
+              </div>
+              <div class="html">
+                <p>TAILWIND CSS</p>
+                <progress max="100" value="95"></progress>
+              </div>
+            </div>
+            <div class="two">
+              <div class="html">
+                <p>JAVASCRIPT</p>
+                <progress max="100" value="70"></progress>
+              </div>
+              <div class="html">
+                <p>JQUERY</p>
+                <progress max="100" value="90"></progress>
+              </div>
+              <div class="html">
+                <p>FIGMA</p>
+                <progress max="100" value="78"></progress>
+              </div>
+            </div>
+          </div>
+      
+          <h1 style="margin-top: 60px; text-align: center; margin-bottom: 50px">
+            - Projects -
+          </h1>
+          <div class="projects">
+            <div class="project">
+              <a href="https://tweet-this.netlify.app/">Tweet This</a>
+            </div>
+            <div class="project">
+              <a href="https://codingsagar-newsapp.netlify.app/">News React App</a>
+            </div>
+            <div class="project">
+              <a href="https://codingsagar.github.io/facebook-clone/">Facebook Clone</a>
+            </div>
+            <div class="project">
+              <a href="https://cs-text-utils.netlify.app/">TextUtils</a>
+            </div>
+            <div class="project">
+              <a href="https://codingsagar.github.io/coderwebsite/">Coder Website</a>
+            </div>
+          </div>
+      
+          <footer>
+              <p>Address : Mumbai 188932 Block 2nd</p>
+              <p>Phone no : 972623221111</p>
+              <p>Mail : mailfrontenddeveloper@gmail.com</p>
+          </footer>
+    </div>
+    
+  </body>
+</html>
